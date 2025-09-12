@@ -1,0 +1,148 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Corpo da página */
+body {
+    background-color: #0d0d0d; /* fundo bem escuro */
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    padding: 20px;
+    background: linear-gradient(135deg, #0d0d0d, #1a1a1a);
+}
+
+/* Cabeçalho */
+header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    color: #00ffff;
+    text-shadow: 0 0 5px #00ffff, 0 0 10px #00ffff, 0 0 20px #00ffff;
+}
+
+/* Seções */
+section {
+    background-color: rgba(20, 20, 20, 0.9);
+    padding: 30px;
+    border-radius: 15px;
+    border: 1px solid #00ffff;
+    box-shadow: 0 0 15px #00ffff55;
+    max-width: 500px;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+/* Títulos das seções */
+section h2 {
+    color: #00ffff;
+    text-shadow: 0 0 5px #00ffff, 0 0 10px #00ffff;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+/* Parágrafos */
+section p {
+    color: #e0e0e0;
+    margin-bottom: 15px;
+}
+
+/* Formulário futurista */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+/* Inputs, textarea e select */
+input, textarea, select {
+    padding: 12px;
+    border-radius: 8px;
+    border: 1px solid #00ffff;
+    background-color: #111;
+    color: #fff;
+    font-size: 1rem;
+    outline: none;
+    transition: 0.3s;
+}
+
+input:focus, textarea:focus, select:focus {
+    border: 1px solid #00ffff;
+    box-shadow: 0 0 15px #00ffff;
+}
+
+/* Inputs tipo range */
+input[type="range"] {
+    accent-color: #00ffff;
+}
+
+/* Botões futuristas */
+button, input[type="submit"] {
+    padding: 12px;
+    border-radius: 8px;
+    border: none;
+    background-color: #00ffff;
+    color: #0d0d0d;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+    text-shadow: 0 0 5px #00ffff;
+}
+
+button:hover, input[type="submit"]:hover {
+    background-color: #00d4d4;
+    box-shadow: 0 0 15px #00ffff, 0 0 30px #00ffff55;
+}
+
+/* Links neon */
+a {
+    color: #00ffff;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+a:hover {
+    text-shadow: 0 0 5px #00ffff, 0 0 10px #00ffff;
+}
+
+/* Rodapé */
+footer {
+    text-align: center;
+    margin-top: 40px;
+    color: #00cccc;
+    font-size: 0.9rem;
+    text-shadow: 0 0 5px #00cccc;
+}
+
+/* Estilo para labels de checkbox e radio */
+label {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+}
+
+/* Checkbox e radio personalizados */
+input[type="checkbox"],
+input[type="radio"] {
+    width: 20px;
+    height: 20px;
+    accent-color: #00ffff;
+    transition: 0.3s;
+}
+
+/* Efeito neon ao marcar */
+input[type="checkbox"]:checked,
+input[type="radio"]:checked {
+    box-shadow: 0 0 10px #00ffff, 0 0 20px #00ffff55;
+}
